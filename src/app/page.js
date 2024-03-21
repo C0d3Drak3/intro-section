@@ -30,7 +30,7 @@ export default function Home() {
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
-            <button className=" mt-8 rounded-2xl w-[130px] h-[50px] text-white bg-black place-self-center font-Epilogue ">
+            <button className=" mt-8 rounded-2xl w-[130px] h-[50px] text-white bg-black place-self-center font-Epilogue hover:border-2 hover:border-black hover:bg-white hover:text-black ">
               Learn More
             </button>
             <div className=" mt-10 md:mt-32 p-2 md:pt-2 h-[50px] flex flex-row items-center justify-center md:justify-start ">
