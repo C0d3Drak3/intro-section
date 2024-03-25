@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import Navbarm from "./components/navbarm";
 import heroD from "../../images/image-hero-desktop.png";
 import heroM from "../../images/image-hero-mobile.png";
 import databiz from "../../images/client-databiz.svg";
@@ -10,7 +11,12 @@ import meet from "../../images/client-meet.svg";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-slate-50  ">
-      <Navbar />
+      <div className="hidden md:block">
+        <Navbar />
+      </div>
+      <div className="block md:hidden">
+        <Navbarm />
+      </div>
       <div className="flex w-full items-center justify-center ">
         <div className="grid md:grid-flow-col md:items-center justify-center md:p-6 md:mt-[20px] ">
           <div className="  block md:hidden ">
