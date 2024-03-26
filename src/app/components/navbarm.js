@@ -36,7 +36,7 @@ export default function Navbar() {
   const transClassMenu = isOpenMenu ? "flex" : "hidden";
 
   return (
-    <div className=" relative w-full h-[70px] flex flex-row items-center justify-between bg-red-300">
+    <div className=" relative w-full h-[70px] flex flex-row items-center justify-between font-Epilogue">
       <div className="flex flex-row  m-4 ">
         <Image
           src={logo}
@@ -46,34 +46,34 @@ export default function Navbar() {
           className=" w-27 h-auto"
         />
       </div>
-      <div className=" block m-4 bg-orange-500 justify-self-end  ">
+      <div className=" block m-4   ">
         <button className=" " onClick={toggleMenu}>
           <Image
             src={burger}
             alt="burger"
             width={27}
             height={27}
-            className=" w-15 h-auto"
+            className=" w-17 h-auto"
           />
         </button>
 
         <div
           className={`absolute flex-col -top-0 right-0 z-30 h-screen w-[250px] justify-self-end bg-slate-100 ${transClassMenu}`}
         >
-          <div>
-            <button className="" onClick={toggleMenu}>
+          <div className="flex justify-end">
+            <button className=" m-4" onClick={toggleMenu}>
               <Image
                 src={close}
                 alt="close"
                 width={27}
                 height={27}
-                className=" w-15 h-auto"
+                className=" w-17 h-auto"
               />
             </button>
           </div>
           {/* menu buttons */}
           <div className="flex flex-col text-gray-500  font-medium">
-            <div className="m-5 relative">
+            <div className="my-2 mx-4 relative">
               <button
                 className="hover:text-black flex flex-row items-center"
                 onClick={toggle}
@@ -98,7 +98,7 @@ export default function Navbar() {
                 )}
               </button>
               <div
-                className={`absolute top-8 right-1 z-30 w-[150px] min-h-[170px] flex flex-col py-4 bg-zinc-100 shadow-md shadow-gray-800 rounded-md ${transClass}`}
+                className={` w-[150px] min-h-[150px] flex flex-col py-4  ${transClass}`}
               >
                 <Link
                   className=" hover:text-black px-4 py-1 flex flex-row items-center"
@@ -158,7 +158,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className="m-5 relative">
+            <div className="my-2 mx-4 relative">
               <button
                 className="hover:text-black flex flex-row items-center"
                 onClick={toggle2}
@@ -183,7 +183,7 @@ export default function Navbar() {
                 )}
               </button>
               <div
-                className={`absolute top-8 z-30 w-[150px] min-h-[130px] flex flex-col py-4 bg-zinc-100 shadow-md shadow-gray-800  rounded-md ${transClass2}`}
+                className={` w-[150px] min-h-[130px] flex flex-col py-4 ${transClass2}`}
               >
                 <Link
                   className="hover:text-black px-4 py-1"
@@ -209,18 +209,18 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="m-5 relative">
+            <div className="my-2 mx-4 relative">
               <button
                 className="hover:text-black flex flex-row items-center"
-                onClick=""
+                onClick={toggleMenu}
               >
                 Careers{" "}
               </button>
             </div>
-            <div className="m-5 relative">
+            <div className="my-2 mx-4 relative">
               <button
                 className="hover:text-black flex flex-row items-center"
-                onClick=""
+                onClick={toggleMenu}
               >
                 About{" "}
               </button>
@@ -228,11 +228,11 @@ export default function Navbar() {
           </div>
 
           {/* Login buttons */}
-          <div className="flex flex-col  h-[60px] mr-4  ">
-            <button className=" rounded-2xl w-[100px] h-[45px]  place-self-center font-Epilogue  text-gray-500 font-semibold  hover:text-black ">
+          <div className="flex flex-col  h-[200px]  ">
+            <button className=" rounded-2xl w-[200px] h-[50px] place-self-center font-Epilogue  text-gray-500 font-semibold  hover:text-black ">
               Login
             </button>
-            <button className=" rounded-2xl w-[100px] h-[45px]  place-self-center font-Epilogue border-2 border-gray-500 hover:border-black text-gray-500 font-semibold  hover:text-black ">
+            <button className=" rounded-2xl w-[200px] h-[50px] place-self-center font-Epilogue border-2 border-gray-500 hover:border-black text-gray-500 font-semibold  hover:text-black ">
               Register
             </button>
           </div>
@@ -240,14 +240,12 @@ export default function Navbar() {
         {isOpenMenu ? (
           <div
             className="fixed top-0 right-0 bottom-0 left-0 z-20 bg-black/50"
-            onClick={toggle}
+            onClick={toggleMenu}
           ></div>
         ) : (
           <></>
         )}
       </div>
-
-      <div className=" relative "></div>
     </div>
   );
 }

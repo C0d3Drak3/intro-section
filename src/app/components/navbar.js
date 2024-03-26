@@ -28,7 +28,7 @@ export default function Navbar() {
   const transClass2 = isOpen2 ? "flex" : "hidden";
 
   return (
-    <div className="  w-full h-[70px] flex flex-row items-center ">
+    <div className="  w-full h-[70px] flex flex-row items-center font-Epilogue ">
       <div className="flex flex-row  m-4 ">
         <Image
           src={logo}
