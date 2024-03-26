@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice generator app solution
+# Frontend Mentor - Intro section with dropdown navigation solution
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Vercel Deploy]()
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-menu-0nQOxTJ-rA)
+- Live Site URL: [Vercel Deploy](https://intro-section-lyart.vercel.app/)
 
 ## My process
 
